@@ -1,0 +1,248 @@
+faheem@KHI-PKCP-EDG-MX96-1-re0> show chassis hardware 
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                JN11B1F14AFA      MX960
+Midplane         REV 03   710-013698   ACAA8891          MX960 Backplane
+Fan Extender     REV 02   710-018051   XY0928            Extended Cable Manager
+FPM Board        REV 03   710-014974   YG5724            Front Panel Display
+PDM              Rev 03   740-013110   QCS1428508F       Power Distribution Module
+PEM 0            Rev 01   740-063048   QCS1942V0RB       DC 4.1kW Power Entry Module
+PEM 1            Rev 01   740-063048   QCS1942V0JJ       DC 4.1kW Power Entry Module
+PEM 2            Rev 01   740-063048   QCS1942V0J0       DC 4.1kW Power Entry Module
+PEM 3            Rev 01   740-063048   QCS1942V0VA       DC 4.1kW Power Entry Module
+Routing Engine 0 REV 12   740-013063   9012005935        RE-S-2000
+Routing Engine 1 REV 12   740-013063   9012005867        RE-S-2000
+CB 0             REV 08   710-021523   YP5582            MX SCB
+CB 1             REV 08   710-021523   YP5525            MX SCB
+CB 2             REV 08   710-021523   YP5396            MX SCB
+FPC 0            REV 14   750-031088   YP6419            MPC Type 2 3D Q
+  CPU            REV 06   711-030884   YP4359            MPC PMB 2G 
+  MIC 0          REV 24   750-028387   YN4179            3D 4x 10GE  XFP
+    PIC 0                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 02   740-014289   T09F54957         XFP-10G-SR
+      Xcvr 1     REV 01   740-031833   UQR0RML           XFP-10G-LR
+    PIC 1                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 03   740-031585   FA369591000E      XFP-10G-T-DWDM-ZR
+      Xcvr 1     REV 01   740-014279   983182A00827      XFP-10G-LR
+  MIC 1          REV 24   750-028387   YN4298            3D 4x 10GE  XFP
+    PIC 2                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0              NON-JNPR     T09G86192         XFP-10G-SR
+      Xcvr 1              NON-JNPR     UJE0AC9           XFP-10G-LR
+    PIC 3                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 02   740-014290   T10E17476         XFP-10G-ER
+      Xcvr 1              NON-JNPR     C948BK010         XFP-10G-SR
+  QXM 0          REV 05   711-028408   YK1200            MPC QXM
+  QXM 1          REV 05   711-028408   YL0234            MPC QXM
+FPC 1            REV 23   750-031088   CAAJ1444          MPC Type 2 3D Q
+  CPU            REV 08   711-030884   CAAJ2560          MPC PMB 2G 
+  MIC 0          REV 24   750-028387   YK7362            3D 4x 10GE  XFP
+    PIC 0                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 02   740-014290   T10E17580         XFP-10G-ER
+      Xcvr 1              NON-JNPR     C948BK00R         XFP-10G-SR
+    PIC 1                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 02   740-014290   T10E17557         XFP-10G-ER
+      Xcvr 1     REV 02   740-014290   T10F81765         XFP-10G-ER
+  MIC 1          REV 24   750-028387   YN4366            3D 4x 10GE  XFP
+    PIC 2                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 03   740-014289   CA26BQ0L9         XFP-10G-SR
+      Xcvr 1              NON-JNPR     UQR0C2L           XFP-10G-LR
+    PIC 3                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 01   740-014279   983182A00241      XFP-10G-LR
+      Xcvr 1              NON-JNPR     993067B00026      XFP-10G-ER
+  QXM 0          REV 06   711-028408   CAAJ2674          MPC QXM
+  QXM 1          REV 06   711-028408   CAAJ2657          MPC QXM
+FPC 2            REV 13   750-031087   YG5075            MPC Type 1 3D
+  CPU            REV 06   711-030884   YG9661            MPC PMB 2G 
+  MIC 0          REV 22   750-028392   YN5488            3D 20x 1GE(LAN) SFP
+    PIC 0                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 4              NON-JNPR     HA11340160988     SFP-LX10
+      Xcvr 5     1183.9   NON-JNPR     2W620060141376    SFP-LX10
+      Xcvr 7              NON-JNPR     EX1022160720      SFP-LX10
+      Xcvr 8     REV 02   740-011614   PGL0T8T           SFP-LX10
+      Xcvr 9     REV 01   740-011614   C10E02625         SFP-LX10
+    PIC 1                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-011614   PGL0SV0           SFP-LX10
+      Xcvr 1     REV 02   740-011614   PGL0T7X           SFP-LX10
+      Xcvr 2     REV 01   740-011614   AC0932S00NE       SFP-LX10
+      Xcvr 9              NON-JNPR     PD127SM           SFP-SX
+  MIC 1          REV 22   750-028392   YN4768            3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 1     REV 01   740-011614   PJD54JT           SFP-LX10
+      Xcvr 2     REV 01   740-011614   AC0931S01CU       SFP-LX10
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+FPC 3            REV 13   750-031087   YG5027            MPC Type 1 3D
+  CPU            REV 06   711-030884   YG9639            MPC PMB 2G 
+  MIC 0          REV 22   750-028392   YN5485            3D 20x 1GE(LAN) SFP
+    PIC 0                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-011614   PGL0T7M           SFP-LX10
+      Xcvr 1              NON-JNPR     100043400933      SFP-LX10
+      Xcvr 2     REV 01   740-011614   PJB0M3A           SFP-LX10
+      Xcvr 3     REV 01   740-011614   PJA51T7           SFP-LX10
+      Xcvr 4              NON-JNPR     BP1023D80736      SFP-LX10
+      Xcvr 5              NON-JNPR     EX1022160719      SFP-LX10
+      Xcvr 6     REV 01   740-011614   PJB0M3E           SFP-LX10
+      Xcvr 7     REV 01   740-011614   PJB0M3U           SFP-LX10
+      Xcvr 8     REV 01   740-011614   PJA42GS           SFP-LX10
+      Xcvr 9              NON-JNPR     HA10450050653     SFP-LX10
+    PIC 1                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 01   740-011614   C10E03978         SFP-LX10
+      Xcvr 1     REV 02   740-011614   PGL3K46           SFP-LX10
+      Xcvr 3     REV 01   740-011614   AC0931S01BJ       SFP-LX10
+      Xcvr 9              NON-JNPR     PD12JKG           SFP-SX
+  MIC 1          REV 22   750-028392   YN5611            3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+FPC 4            REV 13   750-031087   YG5064            MPC Type 1 3D
+  CPU            REV 06   711-030884   YG9615            MPC PMB 2G 
+  MIC 0          REV 22   750-028392   YL6385            3D 20x 1GE(LAN) SFP
+    PIC 0                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     498.79   NON-JNPR     14T210082215966   SFP-LX10
+      Xcvr 2     REV 01   740-011614   C10E03703         SFP-LX10
+      Xcvr 3     REV 01   740-011614   C10E03747         SFP-LX10
+      Xcvr 4     REV 01   740-011614   C10E03805         SFP-LX10
+      Xcvr 5     REV 01   740-011614   C10E03027         SFP-LX10
+      Xcvr 6     25774A   NON-JNPR     EXLGCN09310184    SFP-LX10
+      Xcvr 7     REV 01   740-011614   C10E03754         SFP-LX10
+    PIC 1                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-011614   PGL0T4Z           SFP-LX10
+      Xcvr 1     REV 02   740-011614   PGL0T1T           SFP-LX10
+      Xcvr 2     REV 01   740-011614   AC0931S01BN       SFP-LX10
+      Xcvr 3     REV 01   740-011614   AC0931S01BE       SFP-LX10
+      Xcvr 9              NON-JNPR     PD127X6           SFP-SX
+  MIC 1          REV 22   750-028392   YN5507            3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 1     REV 01   740-011614   PJD54K2           SFP-LX10
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+FPC 5            REV 23   750-031088   CAAF0641          MPC Type 2 3D Q
+  CPU            REV 08   711-030884   CAAB9676          MPC PMB 2G 
+  MIC 0          REV 24   750-028387   YN4371            3D 4x 10GE  XFP
+    PIC 0                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0              NON-JNPR     993067B00027      XFP-10G-ER
+      Xcvr 1              NON-JNPR     C942BK00V         XFP-10G-SR
+    PIC 1                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 02   740-014290   T10E17520         XFP-10G-ER
+      Xcvr 1     REV 01   740-014279   983182A00103      XFP-10G-LR
+  MIC 1          REV 24   750-028387   YM3134            3D 4x 10GE  XFP
+    PIC 2                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 02   740-014289   T09H21749         XFP-10G-SR
+      Xcvr 1     REV 02   740-014290   T10E17460         XFP-10G-ER
+    PIC 3                 BUILTIN      BUILTIN           2x 10GE  XFP
+      Xcvr 0     REV 02   740-014290   T09A21892         XFP-10G-ER
+      Xcvr 1     REV 02   740-014290   T10E17603         XFP-10G-ER
+  QXM 0          REV 06   711-028408   CAAC6905          MPC QXM
+  QXM 1          REV 06   711-028408   CAAC6825          MPC QXM
+FPC 7            REV 13   750-031087   YG9983            MPC Type 1 3D
+  CPU            REV 06   711-030884   YG7229            MPC PMB 2G 
+  MIC 0          REV 22   750-028392   YN5445            3D 20x 1GE(LAN) SFP
+    PIC 0                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 1     REV 01   740-011614   C10E03718         SFP-LX10
+      Xcvr 2     REV 01   740-011614   AC0931S01BL       SFP-LX10
+      Xcvr 8              NON-JNPR     PD12J5L           SFP-SX
+    PIC 1                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-011614   PGL0T5B           SFP-LX10
+      Xcvr 1     REV 01   740-011614   AC0929S068Q       SFP-LX10
+      Xcvr 2     REV 01   740-011614   AC0929S0675       SFP-LX10
+      Xcvr 3     REV 02   740-011614   PGL0T1V           SFP-LX10
+      Xcvr 9              NON-JNPR     PD12YLQ           SFP-SX
+  MIC 1          REV 22   750-028392   YN5509            3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 01   740-011614   AC0931S03GS       SFP-LX10
+      Xcvr 1     REV 01   740-011614   AC0931S01BM       SFP-LX10
+      Xcvr 2     REV 02   740-011614   PGL0T9H           SFP-LX10
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+FPC 8            REV 33   750-028467   CAAB1946          MPC 3D 16x 10GE
+  CPU            REV 11   711-029089   CAAB7154          AMPC PMB
+  PIC 0                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0       REV 01   740-031980   ALQ146A           SFP+-10G-SR
+    Xcvr 1       REV 01   740-031980   ALQ14SP           SFP+-10G-SR
+    Xcvr 2       REV 01   740-031981   AM51024           SFP+-10G-LR
+    Xcvr 3       REV 01   740-030128   UHM08T9           SFP+-10G-ER
+  PIC 1                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0       REV 01   740-030128   UHP066J           SFP+-10G-ER
+    Xcvr 1       REV 01   740-031980   ALQ0VBA           SFP+-10G-SR
+    Xcvr 2       REV 01   740-030128   UHK064J           SFP+-10G-ER
+    Xcvr 3       REV 01   740-031981   AUP1EZ5           SFP+-10G-LR
+  PIC 2                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0       REV 01   740-031980   ALP0TU0           SFP+-10G-SR
+    Xcvr 1                NON-JNPR     UKN01P0           SFP+-10G-LR
+    Xcvr 2                NON-JNPR     INFAP0210852      SFP+-10G-SR
+    Xcvr 3       REV 01   740-031981   AM510AQ           SFP+-10G-LR
+  PIC 3                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0                NON-JNPR     INFAP0210409      SFP+-10G-SR
+    Xcvr 1       REV 01   740-030128   UHP06BQ           SFP+-10G-ER
+    Xcvr 2       REV 01   740-031981   AM50J40           SFP+-10G-LR
+    Xcvr 3       REV 01   740-031980   ALQ1597           SFP+-10G-SR
+FPC 9            REV 13   750-031087   YG5094            MPC Type 1 3D
+  CPU            REV 06   711-030884   YG9658            MPC PMB 2G 
+  MIC 0          REV 22   750-028392   YN5455            3D 20x 1GE(LAN) SFP
+    PIC 0                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0              NON-JNPR     PD12YTF           SFP-SX
+      Xcvr 2     REV 02   740-013111   A413399           SFP-T
+      Xcvr 3     REV 02   740-013111   A394465           SFP-T
+    PIC 1                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 9              NON-JNPR     PD12J2D           SFP-SX
+  MIC 1          REV 22   750-028392   YN5464            3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 01   740-011614   AC0931S03GT       SFP-LX10
+      Xcvr 1              NON-JNPR     PD11NB5           SFP-SX
+      Xcvr 9     REV 02   740-013111   A283653           SFP-T
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-011613   PHN5Y52           SFP-SX
+      Xcvr 4     REV 02   740-013111   A284010           SFP-T
+      Xcvr 5     REV 02   740-013111   A394576           SFP-T
+      Xcvr 6     REV 02   740-013111   C370271           SFP-T
+      Xcvr 9              NON-JNPR     PD12YL5           SFP-SX
+FPC 10           REV 13   750-031087   YG5028            MPC Type 1 3D
+  CPU            REV 06   711-030884   YG4276            MPC PMB 2G 
+  MIC 0          REV 22   750-028392   YN5521            3D 20x 1GE(LAN) SFP
+    PIC 0                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 4     REV 02   740-013111   A411426           SFP-T
+    PIC 1                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-013111   A392802           SFP-T
+      Xcvr 2     REV 02   740-013111   A451892           SFP-T
+      Xcvr 3     REV 02   740-013111   A392801           SFP-T
+      Xcvr 4     REV 02   740-013111   A405154           SFP-T
+      Xcvr 5     REV 02   740-013111   A451664           SFP-T
+      Xcvr 6     REV 02   740-013111   A411362           SFP-T
+      Xcvr 7     REV 02   740-013111   A393153           SFP-T
+      Xcvr 8     REV 02   740-013111   A394498           SFP-T
+      Xcvr 9              NON-JNPR     PD209TL           SFP-SX
+  MIC 1          REV 22   750-028392   YN5472            3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-011613   PHS238R           SFP-SX
+      Xcvr 1     0        NON-JNPR     AM06394B3Y        SFP-SX
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 02   740-013111   A411343           SFP-T
+      Xcvr 1     REV 02   740-013111   A394496           SFP-T
+      Xcvr 2     REV 02   740-013111   A394429           SFP-T
+      Xcvr 3     REV 02   740-013111   A394220           SFP-T
+      Xcvr 4     REV 02   740-013111   A394003           SFP-T
+      Xcvr 5     REV 02   740-013111   A331553           SFP-T
+      Xcvr 6     REV 02   740-013111   A394025           SFP-T
+      Xcvr 9     REV 01   740-011614   PJC15D2           SFP-LX10
+FPC 11           REV 44   750-028467   CAEH9837          MPC 3D 16x 10GE
+  CPU            REV 13   711-029089   CAEN7934          AMPC PMB
+  PIC 0                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0       REV 01   740-031980   ALQ1DRF           SFP+-10G-SR
+    Xcvr 1       REV 01   740-031981   ATN00KK           SFP+-10G-LR
+    Xcvr 2       REV 01   740-031981   ATN06PH           SFP+-10G-LR
+    Xcvr 3       REV 01   740-031983   UTR070L           SFP+-10G-ER
+  PIC 1                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0       REV 01   740-031981   ATN00LR           SFP+-10G-LR
+    Xcvr 1       REV 01   740-030128   UHP066N           SFP+-10G-ER
+    Xcvr 2       REV 01   740-031981   ATN03T1           SFP+-10G-LR
+    Xcvr 3       REV 01   740-031981   ATN034F           SFP+-10G-LR
+  PIC 2                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0       REV 01   740-031980   ALP0SP2           SFP+-10G-SR
+    Xcvr 1       REV 01   740-031981   EA32015908        SFP+-10G-LR
+    Xcvr 2       REV 01   740-031983   US60Y7D           SFP+-10G-ER
+    Xcvr 3       REV 01   740-031980   ALQ1CKF           SFP+-10G-SR
+  PIC 3                   BUILTIN      BUILTIN           4x 10GE(LAN) SFP+
+    Xcvr 0       REV 01   740-031980   ALQ1461           SFP+-10G-SR
+    Xcvr 1       REV 01   740-031981   AM510E7           SFP+-10G-LR
+    Xcvr 2       REV 01   740-031981   AUP0B0W           SFP+-10G-LR
+    Xcvr 3       REV 01   740-030128   UHK064L           SFP+-10G-ER
+Fan Tray 0       REV 02   740-057995   ACDE5424          Enhanced Fan Tray
+Fan Tray 1       REV 02   740-057995   ACDE5416          Enhanced Fan Tray
+
+

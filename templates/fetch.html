@@ -1,0 +1,218 @@
+<html>
+
+<head>
+    <title>Testing App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        
+        .row.content {
+            height: 450px
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            padding-top: 20px;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+            height: 100px;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+        }
+        
+        #myInput {
+            padding: 20px;
+            margin-top: -6px;
+            border: 0;
+            border-radius: 0;
+            background: #f1f1f1;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+    <script>
+        function checkboxValueChanger() {
+            if (frmMain.chkdata.checked == true) {
+                frmMain.hidedata.value = 1;
+            } else {
+                frmMain.hidedata.value = false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="./">Home</a></li>
+                    <li class="active"><a href="./search">Fetch</a></li>
+                    <li><a href="./customer">Customer</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+            </div>
+            <div class="col-sm-8 text-left">
+                <div class="form-group">
+                    <br /><br />
+                    <form method="POST" name="frmMain">
+                        <label for="sel1">Select Customer (select one): </label>
+                        <br />
+                        <select width="100%" name="comcustomer" id="comcustomer" class="selectpicker  form-control" data-show-subtext="true" data-live-search="true">
+                                <option data-tokens="Please Select the Customer">Please Select the Customer</option>
+                                {% for row in data_customer %}
+                                <option data-tokens="{{ row[0] }}">{{ row[0] }}</option>
+                                {% endfor %}
+                        </select><br />
+                        <label for="sel1">Select Router (select one): </label>
+                        <br />
+
+                        <select width='100%' name='comip' id='comip' class="form-control" onchange="run_ip()">
+                                <option data-tokens="Please Select the Router">Please Select the Router</option>
+                        </select>
+
+                        <br />
+                        <textarea name="txtips" id="txtips" class="form-control" rows="5"></textarea><br />
+                        <label for="sel1">Select Router Items: <input type="checkbox" name="chkdata" onchange="checkboxValueChanger()"/> Please check the mark if you want all the data</label>
+                        <input type="hidden" name="hidedata" value="false" />
+                        <select name="comboxitem" id="comboxitem" onchange="run()" class="form-control">
+                            <option>Please Select The Item</option>
+                        </select>
+                        <br />
+                        <textarea name="txtitems" id="txtitems" class="form-control" rows="5"></textarea><br />
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Fetch</button>
+                        <br />
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                {% if fetch_data %}
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Version</th>
+                                    <th>Part Number</th>
+                                    <th>Serial</th>
+                                    <th>Description</th>
+                                </tr>
+                                {% endif %} {% for row in fetch_data %}
+                                <tr>
+                                    {% for d in row %}
+                                    <td>{{ d }}</td>
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </table>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-sm-2 sidenav">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+        <p>Footer Text</p>
+    </footer>
+</body>
+
+<script>
+    $('#comip').change(function() {
+        var Id = $(this).val();
+        $.ajax({
+            data: {
+                comboxip: $('#comip').val(),
+            },
+            type: "POST",
+            url: "/getitem",
+            success: function(data) {
+                document.getElementById("comboxitem").innerHTML = "";
+                document.getElementById("comboxitem").innerHTML += "<option>Please Select The Item</option>";
+                // console.log(data.output)
+                for (let i = 0; i < data.output.length; i++) {
+                    console.log(data.output[i])
+                }
+                for (let i = 0; i < data.output.length; i++) {
+                    document.getElementById("comboxitem").innerHTML += "<option>" + data.output[i] + "</option>";
+                }
+            }
+        });
+    });
+
+    $('#comcustomer').change(function() {
+        var Id = $(this).val();
+        $.ajax({
+            data: {
+                comboxcustomer: $('#comcustomer').val(),
+            },
+            type: "POST",
+            url: "/getip",
+            success: function(data) {
+                document.getElementById("comip").innerHTML = "";
+                document.getElementById("comip").innerHTML += "<option> Please Select The Routers </option>";
+                // console.log(data.output)
+                for (let i = 0; i < data.output.length; i++) {
+                    console.log(data.output[i])
+                }
+                for (let i = 0; i < data.output.length; i++) {
+                    document.getElementById("comip").innerHTML += "<option>" + data.output[i] + "</option>";
+                }
+
+            }
+        });
+    });
+
+
+    function run_ip() {
+        document.getElementById("txtips").value += document.getElementById("comip").value + "\n";
+    }
+
+    function run() {
+        document.getElementById("txtitems").value += document.getElementById("comboxitem").value + "\n";
+    }
+</script>
+
+</html>
